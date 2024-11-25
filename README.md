@@ -26,8 +26,7 @@ Este proyecto es un servicio local básico que utiliza **Node.js** con **Express
    cd MOCKAROO-API
 
 3. Una vez clonado ir a visual studio y abrir el poyecto, abir una nueva terminal en el proyecto y ejecutar:
-npm init -y  
-npm install express axios
+npm install
 node index.js
 
 Nota: Tener en cuenta que el servicio en el archivo index.js se encuentra la  cons PORT con un puerto por defecto si desea se puede cambiar antes de ejecutar node index.js
