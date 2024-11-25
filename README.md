@@ -15,7 +15,10 @@ Este proyecto es un servicio local básico que utiliza **Node.js** con **Express
      ```bash
      node -v
      npm -v
+  
      ```
+
+## **Clonar Repo**
 
 2. Clonar este repositorio:
    ```bash

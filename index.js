@@ -6,11 +6,17 @@ const PORT = 3006;
 
 // Ruta para obtener datos de Mockaroo
 app.get('/api/data', async (req, res) => {
+    const schema = req.query.schema;
+
+    if (!schema) {
+        return res.status(400).json({ error: 'El parámetro schema es requerido' });
+    }
+
     try {
         const response = await axios.get('https://api.mockaroo.com/api/generate.json', {
             params: {
                 key: '9b592700',
-                schema: 'EditProfile', 
+                schema: schema,
                 count: 100
             }
         });
